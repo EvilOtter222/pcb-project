@@ -1,0 +1,30 @@
+** Drc report for pcb-project.kicad_pcb **
+** Created on 2026-10-11T18:51:40 **
+** Report includes: Errors **
+
+** Found 2 DRC violations **
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(157.7000 mm, 90.0000 mm): Footprint R1
+    @(160.4000 mm, 91.6000 mm): Footprint Y1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(161.5000 mm, 94.8000 mm): Footprint C13
+    @(160.4000 mm, 91.6000 mm): Footprint Y1
+
+** Found 1 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.7250 mm, 83.7750 mm): Track [+3V3] on F.Cu, length 3.6451 mm
+    @(157.6979 mm, 84.1508 mm): Track [+3V3] on B.Cu, length 0.3913 mm
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
