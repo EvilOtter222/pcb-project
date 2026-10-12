@@ -2,7 +2,7 @@
 
 A nintendo switch inspired handheld game console I designed in KiCad, built around a bare RP2040 chip.
 
-![schematic](images/schematic.png)
+![pcb](images/pcb-layout.png)
 
 ## About
 
