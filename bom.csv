@@ -1,11 +1,11 @@
-Part,What it's for,Qty,Unit Price (USD),Total (USD),Vendor
+Part,What it's for,Qty,Unit,Total,Vendor
 RP2040 microcontroller,Main chip that runs the games and reads the buttons,1,1.00,1.00,LCSC
 W25Q128JVSIQ flash memory,Stores the firmware and games,1,2.52,2.52,LCSC
 AP2112K-3.3 regulator (pack of 5),Turns 5V from USB into 3.3V,1,0.86,0.86,LCSC
 ABM8-272-T3 12 MHz crystal,Clock for the RP2040,1,0.63,0.63,LCSC
 TYPE-C-31-M-12 USB-C port (pack of 5),Power and programming,1,0.86,0.86,LCSC
-PAM8302AADCR audio amplifier,Drives the speaker,1,0.62,0.62,Mouser
-Hirose FH12-14S-0.5SH(55) connector,Plugs in the display's ribbon cable,1,2.14,2.14,Mouser
+PAM8302AADCR audio amplifier,Drives the speaker,1,0.62,0.62,LCSC
+5 pin connector,Plugs in the display's ribbon cable,1,3.52,3.52,LCSC
 ER-TFT020-3 2.0 inch IPS display,The screen,1,4.38,4.38,BuyDisplay
 JST B2B-PH-K-S header (pack of 20),Socket for the speaker plug,1,0.71,0.71,LCSC
 Pin header 1x40 (pack of 5),Debug and expansion headers,1,0.80,0.80,LCSC
@@ -14,8 +14,6 @@ Tactile switch 6x6x5 mm (pack of 10),8 game buttons plus boot and reset,1,0.55,0
 Custom PCB (5 boards),The circuit board everything is soldered to,1,7.20,7.20,JLCPCB
 Analog thumbstick (already owned),Direction input for games,1,0.01,0.01,Home
 Small speaker (already owned),Game sound,1,0.01,0.01,Home
-Parts subtotal,,,,28.87,
-Tax & shipping,,,,35.00,
-Total,,,,63.87,
-"Parts funding (Week 1, Tier 2)",,,,65.00,
-Remaining funding,,,,1.13,
+Parts subtotal,,,,30.25,
+Tax & shipping,,,,27.70,
+Total,,,,57.95,
