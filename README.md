@@ -5,7 +5,7 @@ A nintendo switch inspired handheld game console I designed in KiCad, built arou
 ![pcb](images/pcb-layout.png)
 
 ## About
-Hi, I'm Kai (or relufied), a 9th grader from New Jersey passionate about all things electronics and machine learning! 
+Hi, I'm Kai (or `@relufied`), a 9th grader from New Jersey passionate about all things electronics and machine learning! 
 
 This is my first PCB ever. I've done a lot of embedded stuff before (Arduino, Picos, ESP chips) and I built an 8-bit breadboard computer, but everything I've made was on breadboards and protoboards. I had never opened PCB software before this.
 
@@ -103,4 +103,5 @@ The design is done. DRC shows 0 unconnected items, and 2 cosmetic errors. I did 
 1. KiCad from scratch: schematic, footprints, ERC, placement, routing, DRC and gerbers
 2. Everything a bare RP2040 needs to boot: flash, crystal, decoupling caps and USB resistors
 3. How vias actually work (they're holes in the board, not as simple as a color swap)
-4. The autorouter is a scam. I used Freerouting to speed things up (and got the okay even though it's normally not allowed in the Half Life huddle), but it left 27 connections it couldn't do and a mess of vias and pins that were surround by layers and layers of wires :( . I routed all 27 connections of those by hand, and next time I'm routing everything by hand.
+4. The autorouter is a scam. I used Freerouting to speed things up (and got the okay by `@Shadow` in even though it's normally not allowed in the Half Life huddle), but it left 27 connections it couldn't do and a mess of vias and pins that were surround by layers and layers of wires :( . I routed all 27 connections of those by hand, and next time I'm routing everything by hand.
+5. Time management (how to cram 16 hours of development in the span of 3 days)
