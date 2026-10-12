@@ -5,6 +5,7 @@ A nintendo switch inspired handheld game console I designed in KiCad, built arou
 ![pcb](images/pcb-layout.png)
 
 ## About
+Hi, I'm Kai (or relufied), a 9th grader from New Jersey passionate about all things electronics and machine learning! 
 
 This is my first PCB ever. I've done a lot of embedded stuff before (Arduino, Picos, ESP chips) and I built an 8-bit breadboard computer, but everything I've made was on breadboards and protoboards. I had never opened PCB software before this.
 
@@ -48,10 +49,16 @@ All the SMD parts are on the back and the front only has the buttons. There's a 
 
 **Buttons:** Each one connects its pin to ground, and the firmware uses the RP2040's internal pull-ups.
 
-**Thumbstick:** The stick has no datasheet, so all 4 outer ribbon pins go to GPIO26 to GPIO29 (the ADC pins) through 330 ohm resistors. The firmware picks which ones are power, ground, X and Y. The click goes to GPIO10.
+**Thumbstick:** The stick has no datasheet, so all 4 outer ribbon pins go to GPIO26 to GPIO29 (the ADC pins) through 330 ohm resistors. The code picks which ones are power, ground, X and Y. The click goes to GPIO10. The code I gave you might not work the first time, so try swapping the order of the pins. 
 
 **Sound:** GPIO15 makes a PWM signal, a 10k/1k divider shrinks it, and a 22nF cap filters it before it goes into the PAM8302A. GPIO14 turns the amp on.
+## Firmware
 
+The test code is in `firmware/firmware.ino`. It's Arduino code using the Earle Philhower RP2040 core and the Adafruit ST7789 library.
+
+It's a short and simple sanity test tests. it turns on the screen and backlight, shows which buttons are pressed, shows the thumbstick X and Y values, beeps the speaker at startup and when the stick is clicked, and sends a message out to the expansion header.
+
+The board isn't built yet, so the code hasn't been tested. The comments will explain how to use and implement the code for each of these features. 
 ## Pin map
 
 | Pin | What it does |
@@ -59,7 +66,7 @@ All the SMD parts are on the back and the front only has the buttons. There's a 
 | GPIO0, GPIO1 | Expansion header (serial) |
 | GPIO2 to GPIO9 | The 8 buttons |
 | GPIO10 | Thumbstick click |
-| GPIO12, GPIO13 | Expansion header (I2C) |
+| GPIO12, GPIO13 | Expansion I2C |
 | GPIO14 | Amp on/off |
 | GPIO15 | Audio (PWM) |
 | GPIO17 to GPIO21 | Display (SPI) |
@@ -95,5 +102,5 @@ The design is done. DRC shows 0 unconnected items, and 2 cosmetic errors. I did 
 
 1. KiCad from scratch: schematic, footprints, ERC, placement, routing, DRC and gerbers
 2. Everything a bare RP2040 needs to boot: flash, crystal, decoupling caps and USB resistors
-3. How vias actually work (they're holes in the board, not a color swap)
-4. The autorouter is a scam. I used Freerouting to speed things up (and got the okay in the Half Life huddle), but it left 27 connections it couldn't do and a mess of vias. I routed all 27 connections of those by hand, and next time I'm routing everything by hand.
+3. How vias actually work (they're holes in the board, not as simple as a color swap)
+4. The autorouter is a scam. I used Freerouting to speed things up (and got the okay even though it's normally not allowed in the Half Life huddle), but it left 27 connections it couldn't do and a mess of vias and pins that were surround by layers and layers of wires :( . I routed all 27 connections of those by hand, and next time I'm routing everything by hand.
