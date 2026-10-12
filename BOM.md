@@ -28,7 +28,7 @@
 | [Analog thumbstick (already owned)](https://github.com/EvilOtter222/pcb-project) | Direction input for games | 1 | $0.01 | $0.01 | [Home](https://github.com/EvilOtter222/pcb-project) |
 | [Small speaker (already owned)](https://github.com/EvilOtter222/pcb-project) | Game sound | 1 | $0.01 | $0.01 | [Home](https://github.com/EvilOtter222/pcb-project) |
 | **Parts subtotal** | — | — | — | **$30.25** | — |
-| **Tax & shipping** | — | — | — | **$35.00** | — |
-| **Total** | — | — | — | **$65.25** | — |
+| **Tax & shipping** | — | — | — | **$14.00** | — |
+| **Total** | — | — | — | **$44.25** | — |
 
-**$0.25 over the tier's funding.** Every tier gives a fixed amount for parts, so this needs cutting back or a higher tier.
+$20.75 left of the tier's funding.
